@@ -50,6 +50,10 @@ public class FormateaSalidasTexto {
     }
     
     public String fecha2SqliteFecha(String fechaEntrada) {
+        System.out.println("Recibo: " +fechaEntrada);
+        System.out.println("anio: " +fechaEntrada.substring(0, 4));
+        System.out.println(" Mes: " +fechaEntrada.substring(4, 6) );
+        System.out.println(" dia: " +fechaEntrada.substring(6, 8));
         return fechaEntrada.substring(0, 4) + "-" + fechaEntrada.substring(4, 6) + "-" + fechaEntrada.substring(6, 8);
     }
     
